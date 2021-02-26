@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Main {
     // Создаем игровое поле
     public static char[][] map;
-    public static final int SIZE = 5;
-    public static final int FIELDS_TO_WIN = 4;
+    public static final int SIZE = 3;
+    public static final int FIELDS_TO_WIN = 3;
 
     // Вводим символы для заполнения ячеик поля
     public static final char FIELD_EMPTY = '.';
@@ -25,6 +25,9 @@ public class Main {
     public static int counter = 0;
     public static int counterHorizontal = 0;
     public static int counterVertical = 0;
+    public static int lastHumanX;
+    public static int lastHumanY;
+
 
     public static void main(String[] args) {
         initMap();
@@ -33,26 +36,26 @@ public class Main {
             humanTurn();
             printMap();
             if(isWinner1(FIELD_X)){
-                System.out.println("Выиграл человек!");
+                System.out.println("Human wins!");
                 break;
             }
             if(isMapFull()){
-                System.out.println("Ничья");
+                System.out.println("Draw!");
                 break;
             }
 
-            aiTurn();
+            aiTurn(lastHumanX,lastHumanY);
             printMap();
             if(isWinner1(FIELD_O)){
-                System.out.println("Выиграл компьютер!");
+                System.out.println("AI wins!");
                 break;
             }
             if(isMapFull()){
-                System.out.println("Ничья");
+                System.out.println("Draw!");
                 break;
             }
         }
-        System.out.println("Игра закончена!");
+        System.out.println("Game over!");
     }
 
     // Метод для инициализации игрового поля
@@ -83,10 +86,12 @@ public class Main {
     public static void humanTurn(){
         int x, y;
         do{
-            System.out.println("Введите координаты в формате X Y");
+            System.out.println("Please enter your move in form X Y");
             x = scanner.nextInt() - 1;
             y = scanner.nextInt() - 1;
         }while (!isCellValid(x,y));
+        lastHumanX = x;
+        lastHumanY = y;
         map[y][x] = FIELD_X;
     }
 
@@ -96,13 +101,33 @@ public class Main {
         return false;
     }
 
-    public static void aiTurn(){
-        int x, y;
-        do{
+    public static void aiTurn(int j, int i){
+        int x = 0;
+        int y = 0;
+        if(map[i][j+1] == FIELD_X && map[i][j+2] == FIELD_EMPTY){
+            x = j+2;
+            y = i;
+        }else if(map[i+1][j] == FIELD_X && map[i+2][j] == FIELD_EMPTY){
+            x = j;
+            x = i + 2;
+        }if(map[i][j+1] == FIELD_EMPTY){
+            x = j + 1;
+            y = i;
+        }else if(map[i+1][j] == FIELD_EMPTY){
+            x = j;
+            y = i + 1;
+        }else if(map[i][j - 1] == FIELD_EMPTY){
+            x = j - 1;
+            y = i;
+        }else if(map[i-1][j] == FIELD_EMPTY){
+            x = j;
+            y = i - 1;
+        }
+        /*do{
             x = random.nextInt(SIZE);
             y = random.nextInt(SIZE);
-        }while (!isCellValid(x,y));
-        System.out.println("Компьютер походил в точку X = " + (x + 1) + " Y = " + (y + 1));
+        }while (!isCellValid(x,y));*/
+        System.out.println("AI made a move: X = " + (x + 1) + " Y = " + (y + 1));
         map[y][x] = FIELD_O;
     }
 

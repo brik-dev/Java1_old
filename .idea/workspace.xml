@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6850a2b-3dc5-4603-b659-11342e151a72" name="Default Changelist" comment="" />
+    <list default="true" id="69105203-650b-46e6-9704-2721b037188e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work4/out/production/home_work4/ru/geekbrains/lesson4/home_work4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/home_work4/out/production/home_work4/ru/geekbrains/lesson4/home_work4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work4/src/ru/geekbrains/lesson4/home_work4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/home_work4/src/ru/geekbrains/lesson4/home_work4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/home_work6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work6/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/home_work6/.idea/modules.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,24 +26,31 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1h02AsOf1irr3WrHv0XNl6CIqqS" />
+  <component name="ProjectId" id="1idUMJizVyns5gQy5cPkFm48vOp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java2/src/lesson_four/homework" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6850a2b-3dc5-4603-b659-11342e151a72" name="Default Changelist" comment="" />
-      <created>1599133548476</created>
+      <changelist id="69105203-650b-46e6-9704-2721b037188e" name="Default Changelist" comment="" />
+      <created>1602236912551</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599133548476</updated>
+      <updated>1602236912551</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1602262466739">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1602262466739" />
   </component>
 </project>
